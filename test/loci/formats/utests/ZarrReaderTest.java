@@ -1,4 +1,4 @@
-package test.loci.formats.utests;
+package loci.formats.utests;
 
 /*-
  * #%L
@@ -78,7 +78,7 @@ public class ZarrReaderTest {
   public void setUp() throws Exception {
     zarrService = Mockito.mock(ZarrService.class);
     reader = new ZarrReaderMock(zarrService);
-    file = File.createTempFile("tileTest", ".zarr");
+    file = File.createTempFile("tileTest", ".zarr", new File("C:/Users/dornier/Downloads"));
     String rootPath = file.getAbsolutePath();
     String canonicalPath = new Location(rootPath).getCanonicalPath();
 
